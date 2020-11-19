@@ -1,0 +1,27 @@
+section.player-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.player-list > div {
+    background-color: blue;
+}
+
+section.game-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.play-game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.winner-is {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
