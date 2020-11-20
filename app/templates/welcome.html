@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="game-title">
+<h2>Welcome to our players</h2>
+</section>  
+<section class="player-list">
+    {% for player in players %}
+<div>
+    <img src="https://source.unsplash.com/400x600/?{{ player.choice }}" alt="image of {{ players.choice }}">
+    <h4>Player {{ players.index(player)+1 }} : {{player.name}}</h4>
+</div>
+{% endfor %}
+</section>
+<section class="play-game"> 
+    <h2><a href="/{{ players[0].choice }}/{{ players[1].choice }}">Click here to play!</a></h2>
+</section>
+
+{% endblock %}

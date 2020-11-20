@@ -6,22 +6,56 @@ section.player-list{
 
 section.player-list > div {
     background-color: blue;
+    text-align: center;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 section.game-title {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: burlywood;
+    border-radius: 10px;
 }
 
 section.play-game {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: cornsilk;
+    border-radius: 10px;
 }
 
 section.winner-is {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+body > header {
+    background-color: darkgreen;
+    margin: auto;
+}
+
+body > header {
+    margin: 0px;
+    color: white;
+}
+
+body > header > ul{
+    margin: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }

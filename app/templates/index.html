@@ -1,18 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="game-title">
-<h2>Welcome to our players</h2>
-</section>  
-<section class="player-list">
-    {% for player in players %}
-<div>
-    <h4>Player {{ players.index(player)+1 }} : {{player.name}}</h4>
-</div>
-{% endfor %}
-</section>
-<section class="play-game"> 
-    <h2><a href="/{{ players[0].choice }}/{{ players[1].choice }}">Click here to play!</a></h2>
+
+<section>
+    <h2>How to play rock, paper, scissors</h2>
+    <h4><a href="/create-players">Get Started</a><h4>
 </section>
 
 {% endblock %}

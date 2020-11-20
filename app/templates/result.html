@@ -4,8 +4,14 @@
 <section class="winner-is">
 
     <h1>And the winner is...</h1>
-
+    
+    {% if not winner %}
+    <h2>It's a draw...</h2>
+    {% else %}
     <h2>{{ winner.name }} wins by playing {{ winner.choice }}</h2>
+    {% endif %}
+
+    
 
 </section>
 
