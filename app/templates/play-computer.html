@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h2>Enter your details below...</h2>
+    <p>Make yourself as fearsome as possible... </p>
+</section>
+
+<section class="play_computer_players_form">
+
+    <form action="/add-player-vs-computer" method="post">
+        <h3>Player 1</h3>
+        <label for="player_1_name">Name</label>
+        <input type="text" name="player_1_name" id="player_1_name">
+        <label for="player_1_choice">Choose a hand to play:</label>
+        <select name="player_1_choice" id="player_1_choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+
+        <input type="submit" value="Let's beat that computer right now!">
+    </form>
+
+</section>
+
+
+{% endblock %}

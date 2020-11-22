@@ -27,3 +27,12 @@ def add_players():
     player_2.name = request.form["player_2_name"]
     player_2.choice = request.form["player_2_choice"]
     return redirect('/welcome')
+
+@app.route('/play-computer')
+def play_computer():
+    return render_template("play-computer.html", title="Rock Paper Scissors")
+
+@app.route('/add-player-vs-computer', methods=["POST"])
+def add_player_vs_computer():
+    print(request.form)
+    return "Done"

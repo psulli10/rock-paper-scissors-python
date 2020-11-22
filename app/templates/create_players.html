@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section>
+    <h2>Enter your players details below...</h2>
+    <p>Make your players as fearsome as possible... no rock unturned, no paper cuts, scissor theit timbers!</p>
+</section>
+
 <section class="create_players_form">
 
     <form action="/add-players" method="post">
@@ -23,7 +28,7 @@
             <option value="scissors">Scissors</option>
         </select>
 
-        <input type="submit" value="Add Players">
+        <input type="submit" value="Make these mad fools play right now! - click me">
     </form>
 
 </section>
